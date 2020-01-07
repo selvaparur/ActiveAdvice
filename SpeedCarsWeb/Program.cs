@@ -14,7 +14,7 @@ namespace SpeedCarsWeb
     {
         public static void Main(string[] args)
         {
-            // test
+            // test test
             CreateWebHostBuilder(args).Build().Run();
         }
 
