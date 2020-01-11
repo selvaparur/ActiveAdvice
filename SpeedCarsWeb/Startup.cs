@@ -16,6 +16,7 @@ namespace SpeedCarsWeb
     {
         public Startup(IConfiguration configuration)
         {
+            // Seva
             Configuration = configuration;
         }
 
