@@ -5,8 +5,7 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
     <LangVersion>latest</LangVersion>
-    <AspNetCoreModuleName>AspNetCoreModule</AspNetCoreModuleName>
-    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>    
+    <AspNetCoreModuleName>AspNetCoreModule</AspNetCoreModuleName>        
   </PropertyGroup>
 
 
