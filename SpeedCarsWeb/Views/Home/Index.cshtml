@@ -5,15 +5,19 @@
 <div class="text-center">
     <h1 class="display-4">Welcome <span style="color: green;">Selva</span></h1>
     <form style="margin-top: 30px;">
-         <script type="text/javascript">
+        <script type="text/javascript">
 
-            function Save()
-            {
-            alert('Car details saved successfully');
+            function Save() {
+                document.getElementById("lblMsg").innerHTML = 'Car details saved successfully';
             }
 
         </script>
         <div>
+            <div class="form-group row">
+                <div class="col-sm-3"></div>
+                <label id="lblMsg" class="col-sm-2 col-form-label"></label>
+
+            </div>
             <div class="form-group row">
                 <div class="col-sm-3"></div>
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Car Name</label>
@@ -31,7 +35,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-12">
-                    <button type="submit" id="btnSave" class="btn btn-primary"  onclick="Save();" style="background-color:#7d3f98;border-color:transparent !important">Save</button>
+                    <button type="submit" id="btnSave" class="btn btn-primary" onclick="Save();" style="background-color:#7d3f98;border-color:transparent !important">Save</button>
                 </div>
             </div>
         </div>
