@@ -31,9 +31,7 @@ namespace SpeedCarsTests
 
         }
 
-
-        [TestMethod]
-        [TestCategory("Selenium")]
+        
         public void Adding_cars_to_our_portal()
         {
             driver.Navigate().GoToUrl(homeURL);
