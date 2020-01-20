@@ -31,7 +31,7 @@ namespace SpeedCarsTests
 
         }
 
-        
+        [TestMethod]
         public void Adding_cars_to_our_portal()
         {
             driver.Navigate().GoToUrl(homeURL);
@@ -44,7 +44,7 @@ driver.FindElement(By.Id("txtname")));
             elementname.SendKeys("Ferrari");
             elementmodel.SendKeys("GTC4");
             driver.FindElement(By.Id("btnSave")).Click();
-            Assert.AreEqual("Sign In", "Sign In");
+            Assert.AreEqual("test", "test");
         }
 
 
