@@ -45,7 +45,7 @@ driver.FindElement(By.Id("txtname")));
             IWebElement elementmodel = driver.FindElement(By.Id("txtmodel"));
             elementname.SendKeys("Ferrari");
             elementmodel.SendKeys("GTC4");
-            driver.FindElement(By.Id("btnsave")).Click();
+            driver.FindElement(By.Id("btnSave")).Click();
             Assert.AreEqual("Sign In", "Sign In");
         }
 
