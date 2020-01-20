@@ -23,8 +23,7 @@ steps:
   displayName: Test
   inputs:
     command: test
-    projects: '**/*SpeedCarsTests.csproj'
-    arguments: '--configuration $(BuildConfiguration)'
+    projects: '**/*SpeedCarsTests.csproj'    
     
 - task: DotNetCoreCLI@2
   displayName: Publish
