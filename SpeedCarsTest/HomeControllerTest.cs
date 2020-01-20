@@ -14,5 +14,21 @@ namespace SpeedCarsTest
             var result = controller.Index();
             Assert.AreEqual(result, result);
         }
+        
+        [TestMethod]
+        public void Test1()
+        {
+            HomeController controller = new HomeController();
+            var result = controller.Index();
+            Assert.AreEqual(result, result);
+        }
+        
+        [TestMethod]
+        public void Test2()
+        {
+            HomeController controller = new HomeController();
+            var result = controller.Index();
+            Assert.AreEqual(result, result);
+        }
     }
 }
