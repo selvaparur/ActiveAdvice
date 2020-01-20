@@ -18,6 +18,12 @@ steps:
   inputs:
     projects: '**/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Push Package'
+  inputs:
+    command: pack
+    packagesToPack: CacheFramework/CacheFramework.csproj
     
 - task: DotNetCoreCLI@2
   displayName: Test
