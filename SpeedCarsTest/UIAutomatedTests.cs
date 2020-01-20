@@ -31,7 +31,7 @@ namespace SpeedCarsTests
 
         }
 
-        [TestMethod]
+        
         public void Adding_cars_to_our_portal()
         {
             driver.Navigate().GoToUrl(homeURL);
