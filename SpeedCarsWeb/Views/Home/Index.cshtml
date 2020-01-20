@@ -5,6 +5,14 @@
 <div class="text-center">
     <h1 class="display-4">Welcome <span style="color: green;">Selva</span></h1>
     <form style="margin-top: 30px;">
+         <script type="text/javascript">
+
+            function Save()
+            {
+            alert('Car details saved successfully');
+            }
+
+        </script>
         <div>
             <div class="form-group row">
                 <div class="col-sm-3"></div>
@@ -23,7 +31,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-12">
-                    <button type="submit" id="btnSave" class="btn btn-primary" style="background-color:#7d3f98;border-color:transparent !important">Save</button>
+                    <button type="submit" id="btnSave" class="btn btn-primary"  onclick="Save();" style="background-color:#7d3f98;border-color:transparent !important">Save</button>
                 </div>
             </div>
         </div>
