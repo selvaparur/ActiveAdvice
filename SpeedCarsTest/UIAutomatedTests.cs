@@ -26,7 +26,7 @@ namespace SpeedCarsTests
         public void SetupTest()
         {
             homeURL = "https://sbx.azurewebsites.net";
-            string driverPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"chromedriver.exe");
+            string driverPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
             driver = new ChromeDriver(driverPath);
 
         }
