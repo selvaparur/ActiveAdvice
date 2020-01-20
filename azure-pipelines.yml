@@ -25,6 +25,13 @@ steps:
     command: pack
     packagesToPack: CacheFramework/CacheFramework.csproj
     
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    publishVstsFeed: 'SpeedCarsShared'
+    
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
