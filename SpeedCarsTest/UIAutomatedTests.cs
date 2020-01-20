@@ -36,16 +36,16 @@ namespace SpeedCarsTests
         [TestCategory("Selenium")]
         public void Adding_cars_to_our_portal()
         {
-//            driver.Navigate().GoToUrl(homeURL);
-//            WebDriverWait wait = new WebDriverWait(driver,
-//System.TimeSpan.FromSeconds(10));
-//            wait.Until(driver =>
-//driver.FindElement(By.Id("txtname")));
-//            IWebElement elementname = driver.FindElement(By.Id("txtname"));
-//            IWebElement elementmodel = driver.FindElement(By.Id("txtmodel"));
-//            elementname.SendKeys("Ferrari");
-//            elementmodel.SendKeys("GTC4");
-//            driver.FindElement(By.Id("btnSave")).Click();
+            driver.Navigate().GoToUrl(homeURL);
+            WebDriverWait wait = new WebDriverWait(driver,
+System.TimeSpan.FromSeconds(10));
+            wait.Until(driver =>
+driver.FindElement(By.Id("txtname")));
+            IWebElement elementname = driver.FindElement(By.Id("txtname"));
+            IWebElement elementmodel = driver.FindElement(By.Id("txtmodel"));
+            elementname.SendKeys("Ferrari");
+            elementmodel.SendKeys("GTC4");
+            driver.FindElement(By.Id("btnSave")).Click();
             Assert.AreEqual("Sign In", "Sign In");
         }
 
