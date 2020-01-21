@@ -30,7 +30,7 @@ steps:
   inputs:
     command: push
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-    publishVstsFeed: 'SpeedCarsShared'
+    publishVstsFeed: '215c1d72-9637-4bcd-b67f-9a9595dba16f/6189322f-d84b-4bed-a3b9-eaec8a2f6b54'
     
 - task: DotNetCoreCLI@2
   displayName: Test
