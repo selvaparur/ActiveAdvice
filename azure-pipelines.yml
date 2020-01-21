@@ -20,11 +20,29 @@ steps:
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
-  displayName: 'Push Package'
+  displayName: 'Pack CacheFramework'
   inputs:
     command: pack
     packagesToPack: CacheFramework/CacheFramework.csproj
-    
+
+- task: DotNetCoreCLI@2
+  displayName: 'Pack DataLayer'
+  inputs:
+    command: pack
+    packagesToPack: DataLayer/DataLayer.csproj
+
+- task: DotNetCoreCLI@2
+  displayName: 'Pack Logger'
+  inputs:
+    command: pack
+    packagesToPack: Logger/Logger.csproj
+
+- task: DotNetCoreCLI@2
+  displayName: 'Push Package'
+  inputs:
+    command: pack
+    packagesToPack: MailComponent/MailComponent.csproj
+
 - task: NuGetCommand@2
   displayName: 'NuGet push'
   inputs:
