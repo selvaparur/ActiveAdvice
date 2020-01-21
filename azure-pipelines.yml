@@ -24,31 +24,32 @@ steps:
   inputs:
     command: pack
     packagesToPack: CacheFramework/CacheFramework.csproj
-
+    
 - task: DotNetCoreCLI@2
   displayName: 'Pack DataLayer'
   inputs:
     command: pack
     packagesToPack: DataLayer/DataLayer.csproj
-
+    
 - task: DotNetCoreCLI@2
   displayName: 'Pack Logger'
   inputs:
     command: pack
     packagesToPack: Logger/Logger.csproj
-
+    
 - task: DotNetCoreCLI@2
   displayName: 'Push Package'
   inputs:
     command: pack
     packagesToPack: MailComponent/MailComponent.csproj
-
+    
 - task: NuGetCommand@2
   displayName: 'NuGet push'
   inputs:
     command: push
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     publishVstsFeed: '215c1d72-9637-4bcd-b67f-9a9595dba16f/6189322f-d84b-4bed-a3b9-eaec8a2f6b54'
+    allowPackageConflicts: true
     
 - task: DotNetCoreCLI@2
   displayName: Test
