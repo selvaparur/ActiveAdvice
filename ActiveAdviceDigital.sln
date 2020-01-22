@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedCarsWeb", "SpeedCarsWeb\SpeedCarsWeb.csproj", "{10A43EC6-3824-4924-BC64-77E6F8E5BCEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveAdviceWeb", "SpeedCarsWeb\ActiveAdviceWeb.csproj", "{10A43EC6-3824-4924-BC64-77E6F8E5BCEA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedCarsTests", "SpeedCarsTest\SpeedCarsTests.csproj", "{8E102C10-036B-48AF-A4D6-D2B13AF20C2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveAdviceTests", "SpeedCarsTest\ActiveAdviceTests.csproj", "{8E102C10-036B-48AF-A4D6-D2B13AF20C2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheFramework", "CacheFramework\CacheFramework.csproj", "{BF4756D9-1187-4D4C-93DF-30AE837237AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheFramework", "CacheFramework\CacheFramework.csproj", "{BF4756D9-1187-4D4C-93DF-30AE837237AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{9F1112C5-AACA-4E93-B288-546FACFBD1CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger", "Logger\Logger.csproj", "{9F1112C5-AACA-4E93-B288-546FACFBD1CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailComponent", "MailComponent\MailComponent.csproj", "{C0F6E55A-4807-4AFD-AF20-8D52E5A445C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailComponent", "MailComponent\MailComponent.csproj", "{C0F6E55A-4807-4AFD-AF20-8D52E5A445C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{F292B22F-D1C1-4194-8139-3BE742C6317D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\DataLayer.csproj", "{F292B22F-D1C1-4194-8139-3BE742C6317D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveAdviceWebAPI", "ActiveAdviceWebAPI\ActiveAdviceWebAPI.csproj", "{C17F6357-D734-495B-B22C-FB3B92927429}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F292B22F-D1C1-4194-8139-3BE742C6317D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F292B22F-D1C1-4194-8139-3BE742C6317D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F292B22F-D1C1-4194-8139-3BE742C6317D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17F6357-D734-495B-B22C-FB3B92927429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17F6357-D734-495B-B22C-FB3B92927429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17F6357-D734-495B-B22C-FB3B92927429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17F6357-D734-495B-B22C-FB3B92927429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
