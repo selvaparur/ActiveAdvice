@@ -69,5 +69,5 @@ steps:
   displayName: 'Publish Artifact'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
-    artifactName: 'Quarterly'
+    artifactName: 'Point'
   condition: succeededOrFailed()
