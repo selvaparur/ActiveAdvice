@@ -24,24 +24,32 @@ steps:
   inputs:
     command: pack
     packagesToPack: CacheFramework/CacheFramework.csproj
+    versioningScheme: byPrereleaseNumber
+    majorVersion: 2
     
 - task: DotNetCoreCLI@2
   displayName: 'Pack DataLayer'
   inputs:
     command: pack
     packagesToPack: DataLayer/DataLayer.csproj
+    versioningScheme: byPrereleaseNumber
+    majorVersion: 2
     
 - task: DotNetCoreCLI@2
   displayName: 'Pack Logger'
   inputs:
     command: pack
     packagesToPack: Logger/Logger.csproj
+    versioningScheme: byPrereleaseNumber
+    majorVersion: 2
     
 - task: DotNetCoreCLI@2
-  displayName: 'Push Package'
+  displayName: 'Pack MailComponent'
   inputs:
     command: pack
     packagesToPack: MailComponent/MailComponent.csproj
+    versioningScheme: byPrereleaseNumber
+    majorVersion: 2
     
 - task: NuGetCommand@2
   displayName: 'NuGet push'
