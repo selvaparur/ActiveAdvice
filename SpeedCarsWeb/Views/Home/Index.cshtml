@@ -1,44 +1,71 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
-
 <div class="text-center">
-    <h1 class="display-4">Welcome <span style="color: green;">Selva</span></h1>
-    <form style="margin-top: 30px;">
+    
+    <form style="margin-top: 99px;">
+
         <script type="text/javascript">
 
             function Save() {
-                document.getElementById("lblMsg").innerHTML = 'Car details saved successfully';
-                return false;
+                alert('Car details saved successfully');
             }
 
         </script>
-        <div>
-            <div class="form-group row">
-                <div class="col-sm-4"></div>
-                <label id="lblMsg" class="col-sm-4 col-form-label" style="color:green"></label>
 
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-3"></div>
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Car Name</label>
-                <div class="col-sm-7">
-                    <input type="text" class="form-control" style="width:200px;border-color:#7d3f98" id="txtname">
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-3"></div>
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Car Model</label>
-                <div class="col-sm-7">
-                    <input type="text" class="form-control" style="width:200px;border-color:#7d3f98" id="txtmodel">
-                </div>
-            </div>
 
-            <div class="form-group row">
-                <div class="col-sm-12">
-                    <button type="submit" id="btnSave" class="btn btn-primary" onclick="return Save();" style="background-color:#7d3f98;border-color:transparent !important">Save</button>
-                </div>
-            </div>
-        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" style="color:#7d3f98">Patient ID</th>
+                    <th scope="col" style="color:#7d3f98">First Name</th>
+                    <th scope="col" style="color:#7d3f98">Last Name</th>
+                    <th scope="col" style="color:#7d3f98">County</th>
+                    <th scope="col" style="color:#7d3f98">Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Micheal</td>
+                    <td>Jackson</td>
+                    <td>AL</td>
+                    <td>USA</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>David</td>
+                    <td>Jones</td>
+                    <td>TX</td>
+                    <td>USA</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>John</td>
+                    <td>Peter</td>
+                    <td>NY</td>
+                    <td>USA</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Chris</td>
+                    <td>Lee</td>
+                    <td>VA</td>
+                    <td>USA</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Mike</td>
+                    <td>Brown</td>
+                    <td>NY</td>
+                    <td>USA</td>
+                </tr>               
+            </tbody>
+        </table>
+
     </form>
 </div>
