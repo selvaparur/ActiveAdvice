@@ -63,7 +63,7 @@ steps:
   displayName: Test
   inputs:
     command: test
-    projects: '**/*SpeedCarsTests.csproj'    
+    projects: '**/*ActiveAdviceTests.csproj'    
     
 - task: DotNetCoreCLI@2
   displayName: Publish
