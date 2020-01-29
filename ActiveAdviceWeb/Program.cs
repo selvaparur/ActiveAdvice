@@ -14,7 +14,7 @@ namespace SpeedCarsWeb
     {
         public static void Main(string[] args)
         {
-            // test test Selva Test 1132020 test
+            // test test Selva Test 1132020 testcheck
             CreateWebHostBuilder(args).UseKestrel().UseIISIntegration().Build().Run();
         }
 

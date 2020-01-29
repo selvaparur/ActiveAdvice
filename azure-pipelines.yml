@@ -1,5 +1,5 @@
 # ASP.NET Core
-# Build and test ASP.NET Core projects targeting .NET Core..
+# Build and test ASP.NET Core projects targeting .NET Core....
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
@@ -24,38 +24,46 @@ steps:
   inputs:
     command: pack
     packagesToPack: CacheFramework/CacheFramework.csproj
+    versioningScheme: byPrereleaseNumber
+    majorVersion: 2
     
 - task: DotNetCoreCLI@2
   displayName: 'Pack DataLayer'
   inputs:
     command: pack
     packagesToPack: DataLayer/DataLayer.csproj
+    versioningScheme: byPrereleaseNumber
+    majorVersion: 2
     
 - task: DotNetCoreCLI@2
   displayName: 'Pack Logger'
   inputs:
     command: pack
     packagesToPack: Logger/Logger.csproj
+    versioningScheme: byPrereleaseNumber
+    majorVersion: 2
     
 - task: DotNetCoreCLI@2
-  displayName: 'Push Package'
+  displayName: 'Pack MailComponent'
   inputs:
     command: pack
     packagesToPack: MailComponent/MailComponent.csproj
+    versioningScheme: byPrereleaseNumber
+    majorVersion: 2
     
 - task: NuGetCommand@2
   displayName: 'NuGet push'
   inputs:
     command: push
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-    publishVstsFeed: '215c1d72-9637-4bcd-b67f-9a9595dba16f/6189322f-d84b-4bed-a3b9-eaec8a2f6b54'
+    publishVstsFeed: '215c1d72-9637-4bcd-b67f-9a9595dba16f/c5e48f5e-dc8d-40b0-b00b-29518f61d0b6'
     allowPackageConflicts: true
     
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
     command: test
-    projects: '**/*SpeedCarsTests.csproj'    
+    projects: '**/*ActiveAdviceTests.csproj'    
     
 - task: DotNetCoreCLI@2
   displayName: Publish
