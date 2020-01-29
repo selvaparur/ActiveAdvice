@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveAdviceWeb", "SpeedCarsWeb\ActiveAdviceWeb.csproj", "{10A43EC6-3824-4924-BC64-77E6F8E5BCEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveAdviceWeb", "ActiveAdviceWeb\ActiveAdviceWeb.csproj", "{10A43EC6-3824-4924-BC64-77E6F8E5BCEA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveAdviceTests", "SpeedCarsTest\ActiveAdviceTests.csproj", "{8E102C10-036B-48AF-A4D6-D2B13AF20C2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveAdviceTests", "ActiveAdviceWebTests\ActiveAdviceTests.csproj", "{8E102C10-036B-48AF-A4D6-D2B13AF20C2C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheFramework", "CacheFramework\CacheFramework.csproj", "{BF4756D9-1187-4D4C-93DF-30AE837237AC}"
 EndProject

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SpeedCarsWeb\ActiveAdviceWeb.csproj" />
+    <ProjectReference Include="..\ActiveAdviceWeb\ActiveAdviceWeb.csproj" />
   </ItemGroup>
 
 </Project>
