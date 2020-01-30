@@ -7,11 +7,16 @@ COPY ActiveAdviceWeb/*.csproj ./ActiveAdviceWeb/
 
 COPY Logger/*.csproj ./Logger/
 
-COPY ActiveAdviceTests/*.csproj ./ActiveAdviceTests/
 COPY CacheFramework/*.csproj ./CacheFramework/
+
 COPY MailComponent/*.csproj ./MailComponent/
+
 COPY DataLayer/*.csproj ./DataLayer/
+
 COPY ActiveAdviceWebAPI/*.csproj ./ActiveAdviceWebAPI/
+
+COPY ActiveAdviceTests/*.csproj ./ActiveAdviceTests/
+
 RUN dotnet restore
 
 # Copy everything else and build
