@@ -3,6 +3,13 @@ WORKDIR /app
 
 # Copy csproj and restore as distinct layers
 COPY *.sln .
+COPY ActiveAdviceWeb/*.csproj ./ActiveAdviceWeb/
+COPY ActiveAdviceTests/*.csproj ./ActiveAdviceTests/
+COPY CacheFramework/*.csproj ./CacheFramework/
+COPY Logger/*.csproj ./Logger/
+COPY MailComponent/*.csproj ./MailComponent/
+COPY DataLayer/*.csproj ./DataLayer/
+COPY ActiveAdviceWebAPI/*.csproj ./ActiveAdviceWebAPI/
 RUN dotnet restore
 
 # Copy everything else and build
