@@ -15,7 +15,7 @@ COPY DataLayer/*.csproj ./DataLayer/
 
 COPY ActiveAdviceWebAPI/*.csproj ./ActiveAdviceWebAPI/
 
-COPY ActiveAdviceTests/*.csproj ./ActiveAdviceTests/
+COPY ActiveAdviceWebTests/*.csproj ./ActiveAdviceWebTests/
 
 RUN dotnet restore
 
