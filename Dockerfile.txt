@@ -3,10 +3,12 @@ WORKDIR /app
 
 # Copy csproj and restore as distinct layers
 COPY *.sln .
-COPY ActiveAdviceWeb/*.csproj ./ActiveAdviceWeb .
-COPY ActiveAdviceTests/*.csproj ./ActiveAdviceTests .
-COPY CacheFramework/*.csproj ./CacheFramework/
+COPY ActiveAdviceWeb/*.csproj ./ActiveAdviceWeb/
+
 COPY Logger/*.csproj ./Logger/
+
+COPY ActiveAdviceTests/*.csproj ./ActiveAdviceTests/
+COPY CacheFramework/*.csproj ./CacheFramework/
 COPY MailComponent/*.csproj ./MailComponent/
 COPY DataLayer/*.csproj ./DataLayer/
 COPY ActiveAdviceWebAPI/*.csproj ./ActiveAdviceWebAPI/
